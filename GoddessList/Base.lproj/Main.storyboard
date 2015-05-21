@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nNl-ll-zKH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Hj-eu-Ttp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -102,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66" y="322"/>
+            <point key="canvasLocation" x="642" y="242"/>
         </scene>
         <!--Goddess Info-->
         <scene sceneID="Ygf-2t-8fd">
@@ -171,12 +171,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zC0-Db-0FM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="907.5" y="322"/>
+            <point key="canvasLocation" x="1459.5" y="242"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--中国-->
         <scene sceneID="fgn-BW-BI4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nNl-ll-zKH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="中国" image="great_wall.png" id="8ai-hU-mke"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LZT-Xs-2om">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -189,7 +190,106 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zx7-AW-cAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-852" y="322"/>
+            <point key="canvasLocation" x="-150" y="242"/>
+        </scene>
+        <!--韩国-->
+        <scene sceneID="fDO-ql-7EX">
+            <objects>
+                <viewController id="mKp-78-DOg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RJA-ur-dOk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eaq-jD-rY9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Et-eW-rRw">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="songhuiqiao.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="1rS-01-kxF">
+                                <rect key="frame" x="0.0" y="-495" width="600" height="495"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="-30" width="400" height="600"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="1rS-01-kxF"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="1rS-01-kxF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="韩国" image="torii.png" id="0Q6-g1-Fg3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yD9-14-jQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-150" y="936"/>
+        </scene>
+        <!--日本-->
+        <scene sceneID="BWZ-Pa-Xla">
+            <objects>
+                <viewController id="8t6-Wo-STW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lDu-d1-nLA"/>
+                        <viewControllerLayoutGuide type="bottom" id="EDt-gJ-wqD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F2E-hI-4ve">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="cangjingkong.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IyX-Lf-Nxu">
+                                <rect key="frame" x="0.0" y="-789" width="640" height="789"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="IyX-Lf-Nxu"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="IyX-Lf-Nxu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="日本" image="geisha.png" id="8Cn-Nc-Fw3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TcB-Vy-hzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-150" y="1678"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xBj-nl-VbI">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7Hj-eu-Ttp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="HNa-8p-c4p">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nNl-ll-zKH" kind="relationship" relationship="viewControllers" id="qto-Gp-EDd"/>
+                        <segue destination="mKp-78-DOg" kind="relationship" relationship="viewControllers" id="LGR-ll-M3k"/>
+                        <segue destination="8t6-Wo-STW" kind="relationship" relationship="viewControllers" id="kZT-qc-n5l"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ai-7N-DgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1029" y="704"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cangjingkong.jpg" width="640" height="789"/>
+        <image name="geisha.png" width="25" height="25"/>
+        <image name="great_wall.png" width="25" height="25"/>
+        <image name="songhuiqiao.jpeg" width="600" height="495"/>
+        <image name="torii.png" width="25" height="25"/>
+    </resources>
 </document>

@@ -20,6 +20,16 @@
 		031D75C91B0DCE7D00FD0C99 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 031D75C41B0DCE7D00FD0C99 /* 2.jpg */; };
 		031D75CA1B0DCE7D00FD0C99 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 031D75C51B0DCE7D00FD0C99 /* 3.jpg */; };
 		031D75CB1B0DCE7D00FD0C99 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 031D75C61B0DCE7D00FD0C99 /* 4.jpg */; };
+		03A3412E1B0DE30700570B54 /* geisha.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A341261B0DE30700570B54 /* geisha.png */; };
+		03A3412F1B0DE30700570B54 /* geisha@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A341271B0DE30700570B54 /* geisha@2x.png */; };
+		03A341301B0DE30700570B54 /* great_wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A341281B0DE30700570B54 /* great_wall.png */; };
+		03A341311B0DE30700570B54 /* great_wall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A341291B0DE30700570B54 /* great_wall@2x.png */; };
+		03A341321B0DE30700570B54 /* origami.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A3412A1B0DE30700570B54 /* origami.png */; };
+		03A341331B0DE30700570B54 /* origami@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A3412B1B0DE30700570B54 /* origami@2x.png */; };
+		03A341341B0DE30700570B54 /* torii.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A3412C1B0DE30700570B54 /* torii.png */; };
+		03A341351B0DE30700570B54 /* torii@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A3412D1B0DE30700570B54 /* torii@2x.png */; };
+		03A341371B0DFB9500570B54 /* songhuiqiao.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 03A341361B0DFB9500570B54 /* songhuiqiao.jpeg */; };
+		03A341391B0DFCF900570B54 /* cangjingkong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A341381B0DFCF900570B54 /* cangjingkong.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +60,16 @@
 		031D75C41B0DCE7D00FD0C99 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		031D75C51B0DCE7D00FD0C99 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		031D75C61B0DCE7D00FD0C99 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		03A341261B0DE30700570B54 /* geisha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = geisha.png; sourceTree = "<group>"; };
+		03A341271B0DE30700570B54 /* geisha@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geisha@2x.png"; sourceTree = "<group>"; };
+		03A341281B0DE30700570B54 /* great_wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = great_wall.png; sourceTree = "<group>"; };
+		03A341291B0DE30700570B54 /* great_wall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "great_wall@2x.png"; sourceTree = "<group>"; };
+		03A3412A1B0DE30700570B54 /* origami.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = origami.png; sourceTree = "<group>"; };
+		03A3412B1B0DE30700570B54 /* origami@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "origami@2x.png"; sourceTree = "<group>"; };
+		03A3412C1B0DE30700570B54 /* torii.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = torii.png; sourceTree = "<group>"; };
+		03A3412D1B0DE30700570B54 /* torii@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "torii@2x.png"; sourceTree = "<group>"; };
+		03A341361B0DFB9500570B54 /* songhuiqiao.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = songhuiqiao.jpeg; sourceTree = "<group>"; };
+		03A341381B0DFCF900570B54 /* cangjingkong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cangjingkong.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +152,16 @@
 		031D75C11B0DCE7D00FD0C99 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				03A341381B0DFCF900570B54 /* cangjingkong.jpg */,
+				03A341361B0DFB9500570B54 /* songhuiqiao.jpeg */,
+				03A341261B0DE30700570B54 /* geisha.png */,
+				03A341271B0DE30700570B54 /* geisha@2x.png */,
+				03A341281B0DE30700570B54 /* great_wall.png */,
+				03A341291B0DE30700570B54 /* great_wall@2x.png */,
+				03A3412A1B0DE30700570B54 /* origami.png */,
+				03A3412B1B0DE30700570B54 /* origami@2x.png */,
+				03A3412C1B0DE30700570B54 /* torii.png */,
+				03A3412D1B0DE30700570B54 /* torii@2x.png */,
 				031D75C21B0DCE7D00FD0C99 /* 0.jpg */,
 				031D75C31B0DCE7D00FD0C99 /* 1.jpg */,
 				031D75C41B0DCE7D00FD0C99 /* 2.jpg */,
@@ -221,11 +251,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A341351B0DE30700570B54 /* torii@2x.png in Resources */,
+				03A341391B0DFCF900570B54 /* cangjingkong.jpg in Resources */,
 				031D75CB1B0DCE7D00FD0C99 /* 4.jpg in Resources */,
+				03A341331B0DE30700570B54 /* origami@2x.png in Resources */,
+				03A341321B0DE30700570B54 /* origami.png in Resources */,
+				03A341301B0DE30700570B54 /* great_wall.png in Resources */,
 				031D75C91B0DCE7D00FD0C99 /* 2.jpg in Resources */,
 				031D75C71B0DCE7D00FD0C99 /* 0.jpg in Resources */,
+				03A341311B0DE30700570B54 /* great_wall@2x.png in Resources */,
+				03A3412F1B0DE30700570B54 /* geisha@2x.png in Resources */,
+				03A341371B0DFB9500570B54 /* songhuiqiao.jpeg in Resources */,
+				03A3412E1B0DE30700570B54 /* geisha.png in Resources */,
 				031D75A11B0A1EFB00FD0C99 /* Main.storyboard in Resources */,
 				031D75A61B0A1EFB00FD0C99 /* LaunchScreen.xib in Resources */,
+				03A341341B0DE30700570B54 /* torii.png in Resources */,
 				031D75A31B0A1EFB00FD0C99 /* Images.xcassets in Resources */,
 				031D75CA1B0DCE7D00FD0C99 /* 3.jpg in Resources */,
 				031D75C81B0DCE7D00FD0C99 /* 1.jpg in Resources */,
@@ -445,6 +485,7 @@
 				031D75B71B0A1EFB00FD0C99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		031D75B81B0A1EFB00FD0C99 /* Build configuration list for PBXNativeTarget "GoddessListTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +494,7 @@
 				031D75BA1B0A1EFB00FD0C99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
