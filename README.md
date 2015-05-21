@@ -1,2 +1,2 @@
-#Swift-Weather
+#Swift Goddess List
 Goddess List Demo
