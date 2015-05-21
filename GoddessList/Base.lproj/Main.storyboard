@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nNl-ll-zKH">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--我的女神-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="GoddessList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +17,179 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择女神" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzi-cs-pOQ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VnU-2H-F5Z">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="dwR-cK-8Ky"/>
+                                    <constraint firstAttribute="width" constant="400" id="pdD-od-Cgz"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dwR-cK-8Ky"/>
+                                        <exclude reference="pdD-od-Cgz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="dwR-cK-8Ky"/>
+                                        <exclude reference="pdD-od-Cgz"/>
+                                    </mask>
+                                </variation>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exo-yS-248">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="确定">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7h2-C3-Ud7" kind="push" identifier="GoddessSegue" id="7bt-1y-7zp"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dzi-cs-pOQ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="91" id="Kie-US-f0u"/>
+                            <constraint firstItem="VnU-2H-F5Z" firstAttribute="top" secondItem="Dzi-cs-pOQ" secondAttribute="top" constant="60" id="Y8W-X0-Ncv"/>
+                            <constraint firstAttribute="centerX" secondItem="VnU-2H-F5Z" secondAttribute="centerX" id="aqh-kg-J6A"/>
+                            <constraint firstItem="VnU-2H-F5Z" firstAttribute="centerY" secondItem="Exo-yS-248" secondAttribute="centerY" constant="-178" id="dMS-ib-8k7"/>
+                            <constraint firstAttribute="centerX" secondItem="Exo-yS-248" secondAttribute="centerX" id="j2d-wo-6Uh"/>
+                            <constraint firstAttribute="centerX" secondItem="Dzi-cs-pOQ" secondAttribute="centerX" id="mLs-np-pvW">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Dzi-cs-pOQ"/>
+                                <exclude reference="VnU-2H-F5Z"/>
+                                <exclude reference="Exo-yS-248"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Kie-US-f0u"/>
+                                <exclude reference="mLs-np-pvW"/>
+                                <exclude reference="Y8W-X0-Ncv"/>
+                                <exclude reference="aqh-kg-J6A"/>
+                                <exclude reference="dMS-ib-8k7"/>
+                                <exclude reference="j2d-wo-6Uh"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Dzi-cs-pOQ"/>
+                                <include reference="VnU-2H-F5Z"/>
+                                <include reference="Exo-yS-248"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Kie-US-f0u"/>
+                                <include reference="mLs-np-pvW"/>
+                                <include reference="Y8W-X0-Ncv"/>
+                                <include reference="aqh-kg-J6A"/>
+                                <include reference="dMS-ib-8k7"/>
+                                <include reference="j2d-wo-6Uh"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="我的女神" id="Mla-CX-4pL"/>
+                    <connections>
+                        <outlet property="picker" destination="VnU-2H-F5Z" id="gRr-To-v2k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="66" y="322"/>
+        </scene>
+        <!--Goddess Info-->
+        <scene sceneID="Ygf-2t-8fd">
+            <objects>
+                <viewController id="7h2-C3-Ud7" customClass="GoddessInfo" customModule="GoddessList" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BmX-y9-pxD"/>
+                        <viewControllerLayoutGuide type="bottom" id="J1a-xe-ShV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fBf-Vy-JoC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aS1-vO-MKb">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="aS1-vO-MKb" secondAttribute="centerX" id="6N6-31-HJ7"/>
+                            <constraint firstItem="J1a-xe-ShV" firstAttribute="top" secondItem="aS1-vO-MKb" secondAttribute="bottom" constant="20" id="9zx-4w-aG5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aS1-vO-MKb" secondAttribute="trailing" constant="20" id="Hcb-bZ-b17"/>
+                            <constraint firstItem="aS1-vO-MKb" firstAttribute="top" secondItem="BmX-y9-pxD" secondAttribute="bottom" constant="20" id="OxQ-fo-9Dz"/>
+                            <constraint firstAttribute="centerY" secondItem="aS1-vO-MKb" secondAttribute="centerY" id="Rh0-R5-A3X">
+                                <variation key="widthClass=compact" constant="-32"/>
+                            </constraint>
+                            <constraint firstItem="aS1-vO-MKb" firstAttribute="leading" secondItem="fBf-Vy-JoC" secondAttribute="leadingMargin" constant="20" id="r11-Am-FR4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="aS1-vO-MKb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9zx-4w-aG5"/>
+                                <exclude reference="6N6-31-HJ7"/>
+                                <exclude reference="Hcb-bZ-b17"/>
+                                <exclude reference="OxQ-fo-9Dz"/>
+                                <exclude reference="Rh0-R5-A3X"/>
+                                <exclude reference="r11-Am-FR4"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="aS1-vO-MKb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9zx-4w-aG5"/>
+                                <include reference="6N6-31-HJ7"/>
+                                <include reference="Hcb-bZ-b17"/>
+                                <include reference="OxQ-fo-9Dz"/>
+                                <include reference="Rh0-R5-A3X"/>
+                                <include reference="r11-Am-FR4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="qmP-Hq-j73">
+                        <barButtonItem key="rightBarButtonItem" title="分享" id="ckS-vC-g3g">
+                            <connections>
+                                <action selector="shareTapped:" destination="7h2-C3-Ud7" id="jjm-RI-n8p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="img" destination="aS1-vO-MKb" id="o1h-eM-anM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zC0-Db-0FM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907.5" y="322"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fgn-BW-BI4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nNl-ll-zKH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LZT-Xs-2om">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="F1s-gR-hYq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zx7-AW-cAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="322"/>
         </scene>
     </scenes>
 </document>
